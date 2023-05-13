@@ -34,7 +34,6 @@ Matrix flip_matrix_vertical(Matrix matrix) {
     return matrix;
 }
 
-
 int calculate_zero_rows_starting_bottom(Matrix matrix) {
     int rows = matrix_row_count(matrix);
     int cols = matrix_col_count(matrix);
@@ -85,10 +84,20 @@ Matrix align_matrix_on_x_axis(Matrix matrix) {
     int rows = matrix_row_count(matrix);
     int cols = matrix_col_count(matrix);
 
-    int zero_cols = calculate_zero_cols_starting_left(matrix);
     int zero_rows = calculate_zero_rows_starting_bottom(matrix);
 
-    return {{0}};
+    Matrix result;
+
+    for(int i = 0; i <= rows - zero_rows - 1; i++) {
+        for(int j = 0; j <= cols - 1; j++) {
+            // No out of bound exeception possible iff  zero_rows >= 0 and rows >= 1:
+            // bounded: [row - i - 1 >= (rows - (rows - zero_rows - 1) - 1) = zero_rows >= 0, rows - i - 1 <= rows - 1]
+            // bounded: [(rows - zero_rows -1) = rows - 1 - zero_rows, (rows - zero_rows - 1) - (rows - zero_rows - 1)) = 0]
+            result[rows - i - 1][j] =  matrix[(rows - zero_rows - 1) - i][j];
+        }
+    }
+
+    return result;
 }
 
 // Matrix align_matrix_on_xy_axis(Matrix matrix) {
