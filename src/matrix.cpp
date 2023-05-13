@@ -119,27 +119,10 @@ Matrix align_matrix_on_y_axis(Matrix matrix) {
     return result;
 }
 
-// Matrix align_matrix_on_xy_axis(Matrix matrix) {
-//     int rows = matrix_row_count(matrix);
-//     int cols = matrix_col_count(matrix);
+Matrix align_matrix_on_xy_axis(Matrix matrix) {
 
-//     int zero_cols = calculate_zero_cols_starting_left(matrix);
-//     int zero_rows = calculate_zero_rows_starting_bottom(matrix);
+    matrix = align_matrix_on_x_axis(matrix);
+    matrix = align_matrix_on_y_axis(matrix);
 
-//     if(zero_rows == rows - 1) {
-//         return matrix;
-//     }
-
-//     Matrix result(rows, std::vector<int>(cols));
-
-//     for(int i = 0; i <= rows - zero_rows - 1; i++) {
-//         for(int j = 0; j <= cols - zero_cols - 1; j++) {
-//             // No out of boundary exception possible:
-//             // bounded: [(rows - zero_rows -1) = rows - 1 - zero_rows, (rows - zero_rows - 1) - (rows - zero_rows - 1)) = 0]
-//             // bounded: [0 + zero_cols = zero_cols, ((cols - zero_cols - 1) + zero_cols) = cols - 1]
-//             result[i][j] = matrix[(rows - zero_rows - 1) - i][j + zero_cols];
-//         }
-//     }
-
-//     return result;
-// }
+    return matrix;
+}
