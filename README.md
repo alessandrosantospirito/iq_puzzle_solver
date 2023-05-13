@@ -60,3 +60,26 @@ L tile rotated thrice and flipped:
 $$
 L_\text{rotated thrice, flipped} = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}
 $$
+
+#### Board
+Here are some examples for board positions.
+Board position "is empty":
+$$
+B = \begin{pmatrix}0&0&0\\0&0&0\\0&0&0\\0&0&0\end{pmatrix}
+$$
+Board position "is full":
+$$
+B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\1&1&1\end{pmatrix}
+$$
+Board position "one":
+$$
+B = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\\0&0&0\end{pmatrix}
+$$
+Board position "two":
+$$
+B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\0&0&0\end{pmatrix}
+$$
+Board position "three":
+$$
+B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\1&1&0\end{pmatrix}
+$$
