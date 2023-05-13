@@ -1,0 +1,6 @@
+{
+    "name": "iq_puzzle_solver",
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
