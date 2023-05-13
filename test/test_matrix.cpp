@@ -63,15 +63,15 @@ TEST(MatrixTest, CountZeroRowsStartingBottomM) {
 }
 
 TEST(MatrixTest, CountZeroColsStartingLeftM) {
-    ASSERT_EQ(2, calculate_zero_cols_starting_bottom(M));
+    ASSERT_EQ(2, calculate_zero_cols_starting_left(M));
 }
 
 TEST(MatrixTest, CountZeroRowsStartingBottomQAligned) {
-    ASSERT_EQ(0, calculate_zero_rows_starting_bottom(Q_aligned));
+    ASSERT_EQ(0, calculate_zero_rows_starting_bottom(Q_aligned_xy));
 }
 
 TEST(MatrixTest, CountZeroColsStartingLeftQAligned) {
-    ASSERT_EQ(0, calculate_zero_cols_starting_bottom(Q_aligned));
+    ASSERT_EQ(0, calculate_zero_cols_starting_left(Q_aligned_xy));
 }
 
 TEST(MatrixTest, CountZeroRowsStartingBottomMPrime) {
@@ -79,7 +79,7 @@ TEST(MatrixTest, CountZeroRowsStartingBottomMPrime) {
 }
 
 TEST(MatrixTest, CountZeroColsStartingLeftMPrime) {
-    ASSERT_EQ(1, calculate_zero_cols_starting_bottom(M_prime));
+    ASSERT_EQ(1, calculate_zero_cols_starting_left(M_prime));
 }
 
 TEST(MatrixTest, CountZeroRowsStartingBottomQ) {
@@ -87,7 +87,7 @@ TEST(MatrixTest, CountZeroRowsStartingBottomQ) {
 }
 
 TEST(MatrixTest, CountZeroColsStartingLeftQ) {
-    ASSERT_EQ(2, calculate_zero_cols_starting_bottom(Q));
+    ASSERT_EQ(2, calculate_zero_cols_starting_left(Q));
 }
 
 TEST(MatrixTest, AlignedLOnXAxisPrime) {

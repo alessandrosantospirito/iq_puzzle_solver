@@ -58,7 +58,7 @@ int calculate_zero_rows_starting_bottom(Matrix matrix) {
     return zero_rows;
 }
 
-int calculate_zero_cols_starting_bottom(Matrix matrix) {
+int calculate_zero_cols_starting_left(Matrix matrix) {
     int rows = matrix_row_count(matrix);
     int cols = matrix_col_count(matrix);
 
@@ -82,6 +82,12 @@ int calculate_zero_cols_starting_bottom(Matrix matrix) {
 }
 
 Matrix align_matrix_on_x_axis(Matrix matrix) {
+    int rows = matrix_row_count(matrix);
+    int cols = matrix_col_count(matrix);
+
+    int zero_cols = calculate_zero_cols_starting_left(matrix);
+    int zero_rows = calculate_zero_rows_starting_bottom(matrix);
+
     return {{0}};
 }
 
@@ -89,7 +95,7 @@ Matrix align_matrix_on_x_axis(Matrix matrix) {
 //     int rows = matrix_row_count(matrix);
 //     int cols = matrix_col_count(matrix);
 
-//     int zero_cols = calculate_zero_cols_starting_bottom(matrix);
+//     int zero_cols = calculate_zero_cols_starting_left(matrix);
 //     int zero_rows = calculate_zero_rows_starting_bottom(matrix);
 
 //     if(zero_rows == rows - 1) {
