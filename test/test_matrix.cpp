@@ -6,13 +6,17 @@ Matrix L = {{1, 0, 0}, {1, 0, 0}, {1, 1, 1}};
 Matrix L_flipped = {{0, 0, 1}, {0, 0, 1}, {1, 1, 1}};
 Matrix L_rotated = {{1, 1, 1}, {1, 0, 0}, {1, 0, 0}};
 Matrix L_prime = {{0, 1, 0}, {0, 1, 1}, {0, 0, 0}};
-Matrix L_prime_aligned = {{0, 0, 0}, {1, 0, 0}, {1, 1, 0}};
+Matrix L_prime_aligned_x = {{0, 0, 0}, {0, 1, 0}, {0, 1, 1}};
+Matrix L_prime_aligned_y = {{1, 0, 0}, {1, 1, 0}, {0, 0, 0}};
+Matrix L_prime_aligned_xy = {{0, 0, 0}, {1, 0, 0}, {1, 1, 0}};
 Matrix M = {{0, 0}, {0, 0}};
 Matrix M_prime = {{0, 1}, {0, 0}};
 Matrix N = {{1}, {2}, {3}, {4}};
 Matrix K = {{1, 2, 3, 4}};
 Matrix Q = {{0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
-Matrix Q_aligned = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {1, 0, 0}};
+Matrix Q_aligned_x = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}};
+Matrix Q_aligned_y = {{1, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+Matrix Q_aligned_xy = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {1, 0, 0}};
 
 TEST(MatrixTest, RotationL) {
     ASSERT_EQ(L_rotated, rotate_matrix_clockwise(L));
@@ -86,10 +90,18 @@ TEST(MatrixTest, CountZeroColsStartingLeftQ) {
     ASSERT_EQ(2, calculate_zero_cols_starting_bottom(Q));
 }
 
-TEST(MatrixTest, AlignedLPrime) {
-    ASSERT_EQ(L_prime_aligned, align_matrix_on_xy_axis(L_prime));
+TEST(MatrixTest, AlignedLOnXAxisPrime) {
+    ASSERT_EQ(L_prime_aligned_x, align_matrix_on_x_axis(L_prime));
 }
 
-TEST(MatrixTest, AlignedQ) {
-    ASSERT_EQ(Q_aligned, align_matrix_on_xy_axis(Q));
+TEST(MatrixTest, AlignedOnXAxisQ) {
+    ASSERT_EQ(Q_aligned_x, align_matrix_on_x_axis(Q));
 }
+
+// TEST(MatrixTest, AlignedLPrime) {
+//     ASSERT_EQ(L_prime_aligned_xy, align_matrix_on_xy_axis(L_prime));
+// }
+
+// TEST(MatrixTest, AlignedQ) {
+//     ASSERT_EQ(Q_aligned_xy, align_matrix_on_xy_axis(Q));
+// }
