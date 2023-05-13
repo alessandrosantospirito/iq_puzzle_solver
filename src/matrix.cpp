@@ -1,6 +1,7 @@
 #include "matrix.h"
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 int matrix_row_count(Matrix matrix) {
     return matrix.size();
@@ -80,40 +81,29 @@ int calculate_zero_cols_starting_bottom(Matrix matrix) {
     return zero_cols;
 }
 
+Matrix align_matrix_on_x_axis(Matrix matrix) {
+    return {{0}};
+}
+
 // Matrix align_matrix_on_xy_axis(Matrix matrix) {
 //     int rows = matrix_row_count(matrix);
 //     int cols = matrix_col_count(matrix);
 
-//     int zero_rows = 0;
-//     int zero_cols = 0;
+//     int zero_cols = calculate_zero_cols_starting_bottom(matrix);
+//     int zero_rows = calculate_zero_rows_starting_bottom(matrix);
 
-//     for(int i = 0; i < rows; i++) {
-//         for(int j = 0; j < cols; j++) {
-//             if(matrix[i][j] != 0) {
-//                 break;
-//             }
-//         }
-//         zero_cols ++;
-//     }
-
-//     if(zero_cols == rows - 1) {
+//     if(zero_rows == rows - 1) {
 //         return matrix;
 //     }
 
-//     for(int j = cols - 1; j >= 0; j--) {
-//         for(int i = 0; i < rows; i++) {
-//             if(matrix[i][j] != 0) {
-//                 break;
-//             }
-//         }
-//         zero_rows ++;
-//     }
+//     Matrix result(rows, std::vector<int>(cols));
 
-//     Matrix result(cols, std::vector<int>(rows));
-
-//     for(int i = 0; i < rows - zero_cols; i++) {
-//         for(int j = cols - 1; j >= zero_rows; j++) {
-//             result[i][j] = matrix[i][j - zero_rows];
+//     for(int i = 0; i <= rows - zero_rows - 1; i++) {
+//         for(int j = 0; j <= cols - zero_cols - 1; j++) {
+//             // No out of boundary exception possible:
+//             // bounded: [(rows - zero_rows -1) = rows - 1 - zero_rows, (rows - zero_rows - 1) - (rows - zero_rows - 1)) = 0]
+//             // bounded: [0 + zero_cols = zero_cols, ((cols - zero_cols - 1) + zero_cols) = cols - 1]
+//             result[i][j] = matrix[(rows - zero_rows - 1) - i][j + zero_cols];
 //         }
 //     }
 

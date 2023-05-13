@@ -12,6 +12,7 @@ Matrix M_prime = {{0, 1}, {0, 0}};
 Matrix N = {{1}, {2}, {3}, {4}};
 Matrix K = {{1, 2, 3, 4}};
 Matrix Q = {{0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+Matrix Q_aligned = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {1, 0, 0}};
 
 TEST(MatrixTest, RotationL) {
     ASSERT_EQ(L_rotated, rotate_matrix_clockwise(L));
@@ -61,6 +62,14 @@ TEST(MatrixTest, CountZeroColsStartingLeftM) {
     ASSERT_EQ(2, calculate_zero_cols_starting_bottom(M));
 }
 
+TEST(MatrixTest, CountZeroRowsStartingBottomQAligned) {
+    ASSERT_EQ(0, calculate_zero_rows_starting_bottom(Q_aligned));
+}
+
+TEST(MatrixTest, CountZeroColsStartingLeftQAligned) {
+    ASSERT_EQ(0, calculate_zero_cols_starting_bottom(Q_aligned));
+}
+
 TEST(MatrixTest, CountZeroRowsStartingBottomMPrime) {
     ASSERT_EQ(1, calculate_zero_rows_starting_bottom(M_prime));
 }
@@ -77,6 +86,10 @@ TEST(MatrixTest, CountZeroColsStartingLeftQ) {
     ASSERT_EQ(2, calculate_zero_cols_starting_bottom(Q));
 }
 
-// TEST(MatrixTest, Aligned) {
-//     ASSERT_EQ(L_prime_aligned, align_matrix_on_xy_axis(L_prime));
-// }
+TEST(MatrixTest, AlignedLPrime) {
+    ASSERT_EQ(L_prime_aligned, align_matrix_on_xy_axis(L_prime));
+}
+
+TEST(MatrixTest, AlignedQ) {
+    ASSERT_EQ(Q_aligned, align_matrix_on_xy_axis(Q));
+}
