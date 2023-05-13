@@ -1,4 +1,3 @@
-#include <vector>
 #include "test_data_matrices.hpp"
 
 typedef std::vector<std::vector<int>> Matrix;
@@ -30,4 +29,12 @@ Matrix Q_aligned_x = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}};
 Matrix Q_aligned_y = {{1, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
 Matrix Q_aligned_xy = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {1, 0, 0}};
 
+std::vector<Matrix> all_L_tiles = {
+    L, L_rotated, L_rotated_twice, L_rotated_thrice,
+    L_flipped, L_rotated_flipped, L_rotated_twice_flipped, L_rotated_thrice_flipped
+};
 
+std::set<Matrix> all_unique_L_tiles = {
+    L, L_rotated, L_rotated_twice, L_rotated_thrice,
+    L_rotated_thrice_flipped
+};

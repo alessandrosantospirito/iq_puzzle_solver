@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <set>
 
 typedef std::vector<std::vector<int>> Matrix;
 
@@ -31,4 +32,5 @@ extern Matrix Q_aligned_x;
 extern Matrix Q_aligned_y;
 extern Matrix Q_aligned_xy;
 
-
+extern std::vector<Matrix> all_L_tiles;
+extern std::set<Matrix> all_unique_L_tiles;
