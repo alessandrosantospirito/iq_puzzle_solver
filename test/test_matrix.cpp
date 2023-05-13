@@ -98,6 +98,14 @@ TEST(MatrixTest, AlignedOnXAxisQ) {
     ASSERT_EQ(Q_aligned_x, align_matrix_on_x_axis(Q));
 }
 
+TEST(MatrixTest, AlignedLOnYAxisPrime) {
+    ASSERT_EQ(L_prime_aligned_y, align_matrix_on_y_axis(L_prime));
+}
+
+TEST(MatrixTest, AlignedOnYAxisQ) {
+    ASSERT_EQ(Q_aligned_y, align_matrix_on_y_axis(Q));
+}
+
 // TEST(MatrixTest, AlignedLPrime) {
 //     ASSERT_EQ(L_prime_aligned_xy, align_matrix_on_xy_axis(L_prime));
 // }

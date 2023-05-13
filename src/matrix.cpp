@@ -100,6 +100,25 @@ Matrix align_matrix_on_x_axis(Matrix matrix) {
     return result;
 }
 
+Matrix align_matrix_on_y_axis(Matrix matrix) {
+    int rows = matrix_row_count(matrix);
+    int cols = matrix_col_count(matrix);
+
+    int zero_cols = calculate_zero_rows_starting_bottom(matrix);
+
+    Matrix result;
+
+    for(int i = 0; i <= rows - 1; i++) {
+        for(int j = zero_cols; j <= cols - 1; j++) {
+            // No out of bound exeception possible iff  zero_cols >= 0:
+            // bounded: [j >= zero_cols, j <= cols - 1]
+            result[i][j] =  matrix[i][j];
+        }
+    }
+
+    return result;
+}
+
 // Matrix align_matrix_on_xy_axis(Matrix matrix) {
 //     int rows = matrix_row_count(matrix);
 //     int cols = matrix_col_count(matrix);
