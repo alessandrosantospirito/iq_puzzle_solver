@@ -8,3 +8,55 @@ Execute matrix tests:
 ```shell
 ./matrixTests
 ```
+
+Compile matrix and tile test:
+```shell
+g++ -std=c++14 -isystem /usr/include/gtest -pthread src/matrix.cpp src/tiles.cpp test/test_matrix.cpp test/test_tiles.cpp test/data/test_data_matrices.cpp -l gtest -l gtest_main -o matrixTileTest
+```
+
+## Algorihtm
+#### Orientations
+There are 12 tiles, with each tile having 8 possible states. I will illustrate these states using the $L$ tiles as an example:
+
+- "Rotated" is interpreted as "rotated clockwise".
+- "Flipped" is interpreted as "flipped vertically".
+
+L tile:
+$$
+L = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}
+$$
+
+L tile rotated once:
+$$
+L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}
+$$
+
+L tile rotated twice:
+$$
+L_\text{rotated twice} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}
+$$
+
+L tile rotated thrice:
+$$
+L_\text{rotated thrice} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
+$$
+
+L tile flipped:
+$$
+L_\text{flipped} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
+$$
+
+L tile rotated once and flipped:
+$$
+L_\text{rotated once, flipped} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}
+$$
+
+L tile rotated twice and flipped:
+$$
+L_\text{rotated twice, flipped} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}
+$$
+
+L tile rotated thrice and flipped:
+$$
+L_\text{rotated thrice, flipped} = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}
+$$
