@@ -14,7 +14,7 @@ Compile matrix and tile test:
 g++ -std=c++14 -isystem /usr/include/gtest -pthread src/matrix.cpp src/tiles.cpp test/test_matrix.cpp test/test_tiles.cpp test/data/test_data_matrices.cpp -l gtest -l gtest_main -o matrixTileTest
 ```
 
-## Algorihtm
+## Algorithm
 #### Orientations
 There are 12 tiles, with each tile having 8 possible states. I will illustrate these states using the $L$ tiles as an example:
 
