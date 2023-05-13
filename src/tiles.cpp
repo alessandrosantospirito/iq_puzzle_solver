@@ -1,4 +1,5 @@
 #include "tiles.h"
+#include <set>
 
 std::vector<Matrix> calculate_all_tiles(Matrix tile) {
     Matrix tile_rotated_once =  rotate_matrix_clockwise(tile);
