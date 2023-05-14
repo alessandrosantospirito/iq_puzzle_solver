@@ -91,3 +91,8 @@ B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\1&1&0\end{pmatrix}
 $$
 
 
+$$ \begin{bmatrix} 
+   a & b & c \\
+   c & e & f \\
+   g & h & i \\
+   \end{bmatrix} $$
