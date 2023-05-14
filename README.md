@@ -128,9 +128,9 @@ $$
 
 $$
 Board position "two":
-$$\begin{pmatrix}
+$$\begin{bmatrix}
 1&1&1\\
 1&1&1\\
 1&1&1\\
 0&0&0
-\end{pmatrix}$$
+\end{bmatrix}$$
