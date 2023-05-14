@@ -1,4 +1,3 @@
-#include "../src/matrix.h"
 #include "test_data_board.hpp"
 
 Matrix board_position_empty = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};

@@ -4,26 +4,31 @@ Board::Board(Matrix board) : board(board) {
     // constructor implementation
 }
 
-bool Board::is_tile_placement_legal(Matrix tile) {
+// bool Board::is_tile_placement_legal(Matrix tile) {
+//     // implementation
+//     return false;
+// }
+
+// bool Board::is_board_full() {
+//     // implementation
+//     return false;
+// }
+
+// void Board::place_tile(Matrix tile) {
+//     // implementation
+// }
+
+Matrix Board::get_position() {
     // implementation
+    return {{0}};
 }
 
-bool Board::is_board_full() {
-    // implementation
-}
+// int Board::get_rows() {
+//     // implementation
+//     return 0;
+// }
 
-void Board::place_tile(Matrix tile) {
-    // implementation
-}
-
-Matrix Board::get_board() {
-    // implementation
-}
-
-int Board::get_rows() {
-    // implementation
-}
-
-int Board::get_cols() {
-    // implementation
-}
+// int Board::get_cols() {
+//     // implementation
+//     return 0;
+// }
