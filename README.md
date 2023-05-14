@@ -48,9 +48,9 @@ L_\text{rotated thrice} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
 $$
 
 L tile flipped:
-$$
+```math
 L_\text{flipped} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
-$$
+```
 
 L tile rotated once and flipped:
 $$
