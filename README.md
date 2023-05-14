@@ -110,12 +110,12 @@ B = \begin{pmatrix}1&0&0\\
 0&0&0\end{pmatrix}
 $$
 Board position "two":
-$$
-B = \begin{pmatrix}1&1&1\\
+$$B = \begin{pmatrix}
 1&1&1\\
 1&1&1\\
-0&0&0\end{pmatrix}
-$$
+1&1&1\\
+0&0&0
+\end{pmatrix}$$
 Board position "three":
 $$
 B = \begin{pmatrix}1&1&1\\
