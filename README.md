@@ -133,9 +133,9 @@ $$ \begin{bmatrix}
 \end{bmatrix} $$
 
 
-$$ \begin{bmatrix} 
+$$ \begin{pmatrix} 
    1 & 1 & 1 \\
    1 & 1 & 1 \\
    1 & 1 & 1 \\
    0 & 0 & 0 \\
-   \end{bmatrix} $$
+   \end{pmatrix} $$
