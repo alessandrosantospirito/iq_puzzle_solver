@@ -131,10 +131,10 @@ $$ \begin{pmatrix}
     1 & 1 & 0 \\
     \end{pmatrix} $$
 
-$$
 Working math matrix:
 $$ \begin{bmatrix} 
    a & b & c \\
    c & e & f \\
    g & h & i \\
-   \end{bmatrix} $$
+   \end{bmatrix} 
+$$ $$
