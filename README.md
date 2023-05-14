@@ -131,7 +131,7 @@ $$ \begin{pmatrix}
     1 & 1 & 0 \\
     \end{pmatrix} $$
 
-
+$$
 Working math matrix:
 $$ \begin{bmatrix} 
    a & b & c \\
