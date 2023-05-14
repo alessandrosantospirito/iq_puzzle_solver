@@ -34,65 +34,95 @@ There are 12 tiles, with each tile having 8 possible states. I will illustrate t
 - "Flipped" is interpreted as "flipped vertically".
 
 L tile:
-$$L = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}$$
+$$
+L = \begin{pmatrix}1&0&0\\
+1&0&0\\
+1&1&1\end{pmatrix}
+$$
 
 L tile rotated once:
-$$L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}$$
+$$
+L_\text{rotated once} = \begin{pmatrix}1&1&1\\
+1&0&0\\
+1&0&0\end{pmatrix}
+$$
 
 L tile rotated twice:
-$$L_\text{rotated twice} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}$$
+$$
+L_\text{rotated twice} = \begin{pmatrix}1&1&1\\
+0&0&1\\
+0&0&1\end{pmatrix}
+$$
 
 L tile rotated thrice:
 $$
-L_\text{rotated thrice} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
+L_\text{rotated thrice} = \begin{pmatrix}0&0&1\\
+0&0&1\\
+1&1&1\end{pmatrix}
 $$
 
 L tile flipped:
-```math
-L_\text{flipped} = \begin{pmatrix}0&0&1\\0&0&1\\1&1&1\end{pmatrix}
-```
+$$
+L_\text{flipped} = \begin{pmatrix}0&0&1\\
+0&0&1\\
+1&1&1\end{pmatrix}
+$$
 
 L tile rotated once and flipped:
 $$
-L_\text{rotated once, flipped} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}
+L_\text{rotated once, flipped} = \begin{pmatrix}1&1&1\\
+0&0&1\\
+0&0&1\end{pmatrix}
 $$
 
 L tile rotated twice and flipped:
 $$
-L_\text{rotated twice, flipped} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}
+L_\text{rotated twice, flipped} = \begin{pmatrix}1&1&1\\
+1&0&0\\
+1&0&0\end{pmatrix}
 $$
 
 L tile rotated thrice and flipped:
 $$
-L_\text{rotated thrice, flipped} = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}
+L_\text{rotated thrice, flipped} = \begin{pmatrix}1&0&0\\
+1&0&0\\
+1&1&1\end{pmatrix}
 $$
 
 #### Board
 Here are some examples for board positions.
 Board position "is empty":
 $$
-B = \begin{pmatrix}0&0&0\\0&0&0\\0&0&0\\0&0&0\end{pmatrix}
+B = \begin{pmatrix}0&0&0\\
+0&0&0\\0&0&0\\
+0&0&0\end{pmatrix}
 $$
 Board position "is full":
 $$
-B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\1&1&1\end{pmatrix}
+B = \begin{pmatrix}1&1&1\\
+1&1&1\\
+1&1&1\\
+1&1&1\end{pmatrix}
 $$
 Board position "one":
 $$
-B = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\\0&0&0\end{pmatrix}
+B = \begin{pmatrix}1&0&0\\
+1&0&0\\
+1&1&1\\
+0&0&0\end{pmatrix}
 $$
 Board position "two":
 $$
-B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\0&0&0\end{pmatrix}
+B = \begin{pmatrix}1&1&1\\
+1&1&1\\
+1&1&1\\
+0&0&0\end{pmatrix}
 $$
 Board position "three":
 $$
-B = \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\\1&1&0\end{pmatrix}
+B = \begin{pmatrix}1&1&1\\
+1&1&1\\
+1&1&1\\
+1&1&0\end{pmatrix}
 $$
 
-
-$$ \begin{bmatrix} 
-   a & b & c \\
-   c & e & f \\
-   g & h & i \\
-   \end{bmatrix} $$
