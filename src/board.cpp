@@ -1,6 +1,6 @@
 #include "board.h"
 
-Board::Board(Matrix board) : board(board) {
+Board::Board(Matrix position) : position(position) {
     // constructor implementation
 }
 
@@ -20,7 +20,7 @@ Board::Board(Matrix board) : board(board) {
 
 Matrix Board::get_position() {
     // implementation
-    return {{0}};
+    return this->position;
 }
 
 // int Board::get_rows() {

@@ -5,10 +5,10 @@
 
 class Board {
     private:
-        Matrix board;
+        Matrix position;
 
     public:
-        Board(Matrix board);
+        Board(Matrix position);
 
         bool is_tile_placement_legal(Matrix tile);
         bool is_board_full();
