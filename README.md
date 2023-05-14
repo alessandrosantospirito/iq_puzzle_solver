@@ -1,4 +1,7 @@
 # iq_puzzle_solver
+## Todo
+- Documentation of everything used.
+
 ## Run tests
 Compile matrix tests:
 ```shell
