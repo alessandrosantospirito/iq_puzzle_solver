@@ -37,7 +37,7 @@ L tile:
 $$L = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}$$
 
 L tile rotated once:
-$$L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}$$
+$L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}$
 
 L tile rotated twice:
 $$L_\text{rotated twice} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}$$
