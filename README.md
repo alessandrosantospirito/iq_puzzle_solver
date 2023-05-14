@@ -4,6 +4,7 @@
 - CMake file.
 - Code styling.
 - Automated testing on upload.
+- Math rendering on github.
 
 ## Run tests
 Compile matrix tests:
