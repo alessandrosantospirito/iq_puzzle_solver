@@ -124,3 +124,13 @@ B = \begin{pmatrix}1&1&1\\
 1&1&0\end{pmatrix}
 $$
 
+
+
+$$
+Board position "two":
+$$\begin{pmatrix}
+1&1&1\\
+1&1&1\\
+1&1&1\\
+0&0&0
+\end{pmatrix}$$
