@@ -1,6 +1,9 @@
 # iq_puzzle_solver
 ## Todo
 - Documentation of everything used.
+- CMake file.
+- Code styling.
+- Automated testing on upload.
 
 ## Run tests
 Compile matrix tests:
