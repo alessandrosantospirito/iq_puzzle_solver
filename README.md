@@ -34,19 +34,13 @@ There are 12 tiles, with each tile having 8 possible states. I will illustrate t
 - "Flipped" is interpreted as "flipped vertically".
 
 L tile:
-$$
-L = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}
-$$
+$$L = \begin{pmatrix}1&0&0\\1&0&0\\1&1&1\end{pmatrix}$$
 
 L tile rotated once:
-$$
-L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}
-$$
+$$L_\text{rotated once} = \begin{pmatrix}1&1&1\\1&0&0\\1&0&0\end{pmatrix}$$
 
 L tile rotated twice:
-$$
-L_\text{rotated twice} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}
-$$
+$$L_\text{rotated twice} = \begin{pmatrix}1&1&1\\0&0&1\\0&0&1\end{pmatrix}$$
 
 L tile rotated thrice:
 $$
