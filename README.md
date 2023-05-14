@@ -34,125 +34,99 @@ There are 12 tiles, with each tile having 8 possible states. I will illustrate t
 - "Flipped" is interpreted as "flipped vertically".
 
 L tile:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 0 & 0 \\
 1 & 0 & 0 \\
 1 & 1 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated once:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 0 & 0 \\
 1 & 0 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated twice:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 0 & 0 & 1 \\
 0 & 0 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated thrice:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 0 & 0 & 1 \\
 0 & 0 & 1 \\
 1 & 1 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile flipped:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 0 & 0 & 1 \\
 0 & 0 & 1 \\
 1 & 1 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated once and flipped:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 0 & 0 & 1 \\
 0 & 0 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated twice and flipped:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 0 & 0 \\
 1 & 0 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 L tile rotated thrice and flipped:
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 0 & 0 \\
 1 & 0 & 0 \\
 1 & 1 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 #### Board
 Here are some examples for board positions.
 Board position "is empty":
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 0 & 0 & 0 \\
 0 & 0 & 0 \\
 0 & 0 & 0 \\
 0 & 0 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 Board position "is full":
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 Board position "one":
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 0 & 0 \\
 1 & 0 & 0 \\
 1 & 1 & 1 \\
 0 & 0 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 Board position "two":
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 0 & 0 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
 
 Board position "three":
-$$ 
-\begin{pmatrix}
+$$ \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 1 \\
 1 & 1 & 0 \\
-\end{pmatrix} 
-$$
+\end{pmatrix} $$
