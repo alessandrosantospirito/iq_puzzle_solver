@@ -134,7 +134,8 @@ $$ \begin{bmatrix}
 
 
 $$ \begin{bmatrix} 
-   a & b & c \\
-   c & e & f \\
-   g & h & i \\
+   1 & 1 & 1 \\
+   1 & 1 & 1 \\
+   1 & 1 & 1 \\
+   0 & 0 & 0 \\
    \end{bmatrix} $$
