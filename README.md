@@ -124,13 +124,17 @@ B = \begin{pmatrix}1&1&1\\
 1&1&0\end{pmatrix}
 $$
 
-
-
-$$
 Board position "two":
-$$\begin{bmatrix}
+$$ \begin{bmatrix}
 1&1&1\\
 1&1&1\\
 1&1&1\\
 0&0&0
-\end{bmatrix}$$
+\end{bmatrix} $$
+
+
+$$ \begin{bmatrix} 
+   a & b & c \\
+   c & e & f \\
+   g & h & i \\
+   \end{bmatrix} $$
